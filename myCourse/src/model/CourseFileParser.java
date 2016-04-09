@@ -27,7 +27,7 @@ public class CourseFileParser {
 			String line;
 			while((line = reader.readLine()) != null) {
 				Course course = new Course();
-				String[] fields = line.split("|");
+				String[] fields = line.split("\\|");
 				course.setDicipline(fields[0]);
 				course.setNumber(fields[1]);
 				course.setSection(fields[2]);
