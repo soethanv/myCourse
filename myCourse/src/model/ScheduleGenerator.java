@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class ScheduleGenerator {
 	
@@ -24,11 +25,12 @@ public class ScheduleGenerator {
 			tmp = new ArrayList<Course>(available);
 		}
 		int[] counters = new int[selectedCourses.size()];
-		while(counters[counters.length-1] < category.get(selectedCourses.get(selectedCourses.size() - 1)).length-1){
-			//loop
-			//generate list of Courses
+		while((counters = inc(counters, category)) != null){
 			boolean goodGeneration = true;
-			List<Course> generation = new ArrayList<Course>();//TODO replace with schedule generation
+			List<Course> generation = new ArrayList<Course>();
+			for(int x = 0; x < selectedCourses.size(); x++) {
+				generation.add(category.get(selectedCourses.get(x))[counters[x]]);
+			}
 			for(int x = 0; x < generation.size() -1; x++) {
 				if(overlap(generation.get(x), generation.get(x+1))) {
 					goodGeneration = false;
@@ -38,6 +40,24 @@ public class ScheduleGenerator {
 			if(goodGeneration) output.add(generation);
 		}
 		
+		return output;
+	}
+	
+	private int[] inc(int[] counters, Map<Course, Course[]> map) {
+		Course[] keySet = map.keySet().toArray(new Course[0]);
+		int i = 0;
+		boolean carry;
+		int[] output = counters;
+		do{
+			carry = false;
+			output[i]++;
+			if(output[i] >= map.get(keySet[i]).length) {
+				output[i] = 0;
+				carry = true;
+				if(i + 1 >= output.length)
+					return null;
+			}
+		}while(carry);
 		return output;
 	}
 	
