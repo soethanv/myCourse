@@ -6,12 +6,18 @@
 package view;
 
 import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Soe Than
  */
 public class SelectClasses extends javax.swing.JFrame {
+
+    public static int iCheckItem = 0;
+    public static final int iThreeCredit = 3; 
+    public static final int iFourCredit = 4;
 
     /**
      * Creates new form SelectClasses
@@ -30,172 +36,286 @@ public class SelectClasses extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
+        lblAlg3 = new javax.swing.JLabel();
+        lblPreCalc3 = new javax.swing.JLabel();
+        lblCalcOne4 = new javax.swing.JLabel();
+        lblCalcTwo3 = new javax.swing.JLabel();
+        lblProg3 = new javax.swing.JLabel();
+        lblIntro4 = new javax.swing.JLabel();
+        lblMFound3 = new javax.swing.JLabel();
+        lblDiscM3 = new javax.swing.JLabel();
+        lblDataS4 = new javax.swing.JLabel();
+        lblAlgo4 = new javax.swing.JLabel();
+        lblOrg4 = new javax.swing.JLabel();
+        lblSysP4 = new javax.swing.JLabel();
+        lblAppProg3 = new javax.swing.JLabel();
+        lblPLang3 = new javax.swing.JLabel();
+        lblArch4 = new javax.swing.JLabel();
+        lblSoftE3 = new javax.swing.JLabel();
+        lblOS4 = new javax.swing.JLabel();
+        lblOOSys3 = new javax.swing.JLabel();
+        lblUserI3 = new javax.swing.JLabel();
+        lblTest3 = new javax.swing.JLabel();
+        lblProMa3 = new javax.swing.JLabel();
+        lblInfoS3 = new javax.swing.JLabel();
+        lblUnixS3 = new javax.swing.JLabel();
+        lblCrypto3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dependency Graph of Required CS Courses and Concentrations (2014-2016 Catalog)");
-        setFocusableWindowState(false);
-        setType(java.awt.Window.Type.UTILITY);
+        setResizable(false);
 
         jPanel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel1.setBackground(new java.awt.Color(255, 204, 204));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("M1023 Algebra");
-        jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblAlg3.setBackground(new java.awt.Color(255, 204, 204));
+        lblAlg3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblAlg3.setForeground(new java.awt.Color(51, 51, 51));
+        lblAlg3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAlg3.setText("M1023 Algebra");
+        lblAlg3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblAlg3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                lblAlg3MouseClicked(evt);
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("M1093 PreCalc");
-        jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblPreCalc3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPreCalc3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPreCalc3.setText("M1093 PreCalc");
+        lblPreCalc3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblPreCalc3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblPreCalc3MouseClicked(evt);
+            }
+        });
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("M1214 Calc 1");
-        jLabel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCalcOne4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblCalcOne4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCalcOne4.setText("M1214 Calc 1");
+        lblCalcOne4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCalcOne4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCalcOne4MouseClicked(evt);
+            }
+        });
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("M1223 Calc II");
-        jLabel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCalcTwo3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblCalcTwo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCalcTwo3.setText("M1223 Calc II");
+        lblCalcTwo3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCalcTwo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCalcTwo3MouseClicked(evt);
+            }
+        });
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("1063 Prog");
-        jLabel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblProg3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblProg3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblProg3.setText("1063 Prog");
+        lblProg3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblProg3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblProg3MouseClicked(evt);
+            }
+        });
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("1713/1 Intro");
-        jLabel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblIntro4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblIntro4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblIntro4.setText("1713/1 Intro");
+        lblIntro4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblIntro4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIntro4MouseClicked(evt);
+            }
+        });
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("3333 MFound");
-        jLabel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblMFound3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblMFound3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMFound3.setText("3333 MFound");
+        lblMFound3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblMFound3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMFound3MouseClicked(evt);
+            }
+        });
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("2233 DiscM");
-        jLabel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblDiscM3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDiscM3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblDiscM3.setText("2233 DiscM");
+        lblDiscM3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblDiscM3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDiscM3MouseClicked(evt);
+            }
+        });
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setText("2123/1 DataS");
-        jLabel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblDataS4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDataS4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblDataS4.setText("2123/1 DataS");
+        lblDataS4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblDataS4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDataS4MouseClicked(evt);
+            }
+        });
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("3343/1 Algo");
-        jLabel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblAlgo4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblAlgo4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAlgo4.setText("3343/1 Algo");
+        lblAlgo4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblAlgo4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAlgo4MouseClicked(evt);
+            }
+        });
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("3843/1 Org");
-        jLabel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOrg4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblOrg4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblOrg4.setText("3843/1 Org");
+        lblOrg4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOrg4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblOrg4MouseClicked(evt);
+            }
+        });
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("3423/1 SysP");
-        jLabel21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblSysP4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblSysP4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSysP4.setText("3423/1 SysP");
+        lblSysP4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblSysP4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSysP4MouseClicked(evt);
+            }
+        });
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("3443 App Prog");
-        jLabel22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblAppProg3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblAppProg3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAppProg3.setText("3443 App Prog");
+        lblAppProg3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblAppProg3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAppProg3MouseClicked(evt);
+            }
+        });
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("3723 PLang");
-        jLabel23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblPLang3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPLang3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPLang3.setText("3723 PLang");
+        lblPLang3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblPLang3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblPLang3MouseClicked(evt);
+            }
+        });
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("3853/1 Arch");
-        jLabel24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblArch4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblArch4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblArch4.setText("3853/1 Arch");
+        lblArch4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblArch4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblArch4MouseClicked(evt);
+            }
+        });
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("3773 SoftE");
-        jLabel25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblSoftE3.setBackground(new java.awt.Color(51, 51, 51));
+        lblSoftE3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblSoftE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSoftE3.setText("3773 SoftE");
+        lblSoftE3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblSoftE3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSoftE3MouseClicked(evt);
+            }
+        });
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("3733/1 OS");
-        jLabel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOS4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblOS4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblOS4.setText("3733/1 OS");
+        lblOS4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOS4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblOS4MouseClicked(evt);
+            }
+        });
 
-        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("4773 OOSys");
-        jLabel29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOOSys3.setBackground(new java.awt.Color(51, 51, 51));
+        lblOOSys3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblOOSys3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblOOSys3.setText("4773 OOSys");
+        lblOOSys3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblOOSys3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblOOSys3MouseClicked(evt);
+            }
+        });
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("4393 User-I");
-        jLabel30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblUserI3.setBackground(new java.awt.Color(51, 51, 51));
+        lblUserI3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUserI3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUserI3.setText("4393 User-I");
+        lblUserI3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblUserI3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblUserI3MouseClicked(evt);
+            }
+        });
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("4723 Test");
-        jLabel31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblTest3.setBackground(new java.awt.Color(51, 51, 51));
+        lblTest3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblTest3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTest3.setText("4723 Test");
+        lblTest3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblTest3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTest3MouseClicked(evt);
+            }
+        });
 
-        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setText("47733");
-        jLabel32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblProMa3.setBackground(new java.awt.Color(51, 51, 51));
+        lblProMa3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblProMa3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblProMa3.setText("4733 ProMa");
+        lblProMa3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblProMa3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblProMa3MouseClicked(evt);
+            }
+        });
 
-        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("3443 InfoS");
-        jLabel27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblInfoS3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblInfoS3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblInfoS3.setText("3443 InfoS");
+        lblInfoS3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblInfoS3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblInfoS3MouseClicked(evt);
+            }
+        });
 
-        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("4353 UnixS");
-        jLabel28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblUnixS3.setBackground(new java.awt.Color(51, 51, 51));
+        lblUnixS3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUnixS3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUnixS3.setText("4353 UnixS");
+        lblUnixS3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblUnixS3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblUnixS3MouseClicked(evt);
+            }
+        });
 
-        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("4363 Crypto");
-        jLabel33.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCrypto3.setBackground(new java.awt.Color(51, 51, 51));
+        lblCrypto3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblCrypto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCrypto3.setText("4363 Crypto");
+        lblCrypto3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        lblCrypto3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCrypto3MouseClicked(evt);
+            }
+        });
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setText("Proceed");
@@ -212,61 +332,61 @@ public class SelectClasses extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblCalcOne4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(56, 56, 56)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(lblMFound3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(37, 37, 37)
-                                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(lblDiscM3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(lblPLang3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lblOOSys3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lblAlgo4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                            .addComponent(lblOrg4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(lblArch4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGap(39, 39, 39))
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                                         .addGap(28, 28, 28)
-                                                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(lblUserI3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                    .addComponent(lblTest3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lblAppProg3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lblSoftE3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(45, 45, 45)
-                                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(lblProg3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                            .addComponent(lblSysP4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblOS4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblProMa3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGap(507, 507, 507)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblIntro4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblCalcTwo3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblDataS4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(48, 48, 48)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblInfoS3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblUnixS3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblPreCalc3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                            .addComponent(lblAlg3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(45, 45, 45)
-                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblCrypto3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(154, 154, 154))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(366, 366, 366)
@@ -277,43 +397,43 @@ public class SelectClasses extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblAlg3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblPreCalc3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCalcOne4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProg3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCalcTwo3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblIntro4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblMFound3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDataS4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDiscM3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblSysP4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAppProg3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblOrg4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAlgo4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblPLang3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblArch4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSoftE3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblOS4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblInfoS3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblOOSys3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUserI3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTest3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProMa3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUnixS3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCrypto3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -337,13 +457,423 @@ public class SelectClasses extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void lblAlg3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAlg3MouseClicked
         // TODO add your handling code here:
-        jLabel1.setForeground(Color.yellow);
-        if(jLabel1.isForegroundSet())
-            jLabel1.setForeground(Color.black);
-    }//GEN-LAST:event_jLabel1MouseClicked
 
+        boolean b = highlight(lblAlg3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblAlg3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+       
+    }//GEN-LAST:event_lblAlg3MouseClicked
+
+    private void lblPreCalc3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPreCalc3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblPreCalc3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblPreCalc3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblPreCalc3MouseClicked
+
+    private void lblCalcOne4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCalcOne4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblCalcOne4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblCalcOne4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblCalcOne4MouseClicked
+
+    private void lblCalcTwo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCalcTwo3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblCalcTwo3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblCalcTwo3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblCalcTwo3MouseClicked
+
+    private void lblProg3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblProg3MouseClicked
+        // TODO add your handling code here:
+
+        boolean b = highlight(lblProg3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblProg3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblProg3MouseClicked
+
+    private void lblIntro4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIntro4MouseClicked
+        // TODO add your handling code here:
+       
+        boolean b = highlight(lblIntro4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblIntro4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblIntro4MouseClicked
+
+    private void lblMFound3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMFound3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblMFound3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblMFound3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblMFound3MouseClicked
+
+    private void lblDiscM3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDiscM3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblDiscM3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblDiscM3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblDiscM3MouseClicked
+
+    private void lblDataS4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDataS4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblDataS4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblDataS4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblDataS4MouseClicked
+
+    private void lblAlgo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAlgo4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblAlgo4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblAlgo4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblAlgo4MouseClicked
+
+    private void lblOrg4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOrg4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblOrg4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblOrg4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblOrg4MouseClicked
+
+    private void lblAppProg3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAppProg3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblAppProg3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblAppProg3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblAppProg3MouseClicked
+
+    private void lblSysP4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSysP4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblSysP4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblSysP4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblSysP4MouseClicked
+
+    private void lblPLang3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPLang3MouseClicked
+        // TODO add your handling code here
+        boolean b = highlight(lblPLang3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblPLang3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblPLang3MouseClicked
+
+    private void lblArch4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblArch4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblArch4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblArch4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblArch4MouseClicked
+
+    private void lblSoftE3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSoftE3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblSoftE3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblSoftE3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblSoftE3MouseClicked
+
+    private void lblOS4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOS4MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblOS4);
+        if(b)
+            iCheckItem += iFourCredit;
+        else
+            iCheckItem -= iFourCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblOS4.setForeground(Color.black);
+            iCheckItem -= iFourCredit;
+        }
+    }//GEN-LAST:event_lblOS4MouseClicked
+
+    private void lblInfoS3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblInfoS3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblInfoS3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblInfoS3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblInfoS3MouseClicked
+
+    private void lblOOSys3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOOSys3MouseClicked
+        // TODO add your handling code here:
+        
+        boolean b = highlight(lblOOSys3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblOOSys3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblOOSys3MouseClicked
+
+    private void lblUserI3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblUserI3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblUserI3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblUserI3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblUserI3MouseClicked
+
+    private void lblTest3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTest3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblTest3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblTest3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblTest3MouseClicked
+
+    private void lblProMa3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblProMa3MouseClicked
+        // TODO add your handling code here:
+         
+        boolean b = highlight(lblProMa3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblProMa3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+
+        
+    }//GEN-LAST:event_lblProMa3MouseClicked
+
+    private void lblUnixS3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblUnixS3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblUnixS3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblUnixS3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblUnixS3MouseClicked
+
+    private void lblCrypto3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCrypto3MouseClicked
+        // TODO add your handling code here:
+        boolean b = highlight(lblCrypto3);
+        if(b)
+            iCheckItem += iThreeCredit;
+        else
+            iCheckItem -= iThreeCredit;
+            
+        boolean bMax = CheckMaxHours(iCheckItem);
+        if(!bMax)
+        {
+            lblCrypto3.setForeground(Color.black);
+            iCheckItem -= iThreeCredit;
+        }
+    }//GEN-LAST:event_lblCrypto3MouseClicked
+    public static boolean highlight(JLabel jLabel1)
+    {
+         if (jLabel1.getForeground().getRGB() == Color.yellow.getRGB())
+         {
+            jLabel1.setForeground(Color.black);
+            return false;
+         }
+       else
+         {
+            jLabel1.setForeground(Color.yellow);
+            return true; 
+         }
+    }
+
+   
+    
+    public static boolean CheckMaxHours(int iCT)
+    {
+        if(iCT>18)
+        {
+           JOptionPane.showMessageDialog(null,"You cannot register above 18 credits.");
+              return false;
+        }
+        else
+            return true;
+    }
     /**
      * @param args the command line arguments
      */
@@ -381,30 +911,30 @@ public class SelectClasses extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblAlg3;
+    private javax.swing.JLabel lblAlgo4;
+    private javax.swing.JLabel lblAppProg3;
+    private javax.swing.JLabel lblArch4;
+    private javax.swing.JLabel lblCalcOne4;
+    private javax.swing.JLabel lblCalcTwo3;
+    private javax.swing.JLabel lblCrypto3;
+    private javax.swing.JLabel lblDataS4;
+    private javax.swing.JLabel lblDiscM3;
+    private javax.swing.JLabel lblInfoS3;
+    private javax.swing.JLabel lblIntro4;
+    private javax.swing.JLabel lblMFound3;
+    private javax.swing.JLabel lblOOSys3;
+    private javax.swing.JLabel lblOS4;
+    private javax.swing.JLabel lblOrg4;
+    private javax.swing.JLabel lblPLang3;
+    private javax.swing.JLabel lblPreCalc3;
+    private javax.swing.JLabel lblProMa3;
+    private javax.swing.JLabel lblProg3;
+    private javax.swing.JLabel lblSoftE3;
+    private javax.swing.JLabel lblSysP4;
+    private javax.swing.JLabel lblTest3;
+    private javax.swing.JLabel lblUnixS3;
+    private javax.swing.JLabel lblUserI3;
     // End of variables declaration//GEN-END:variables
 }
