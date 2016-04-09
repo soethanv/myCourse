@@ -1,5 +1,10 @@
 package main;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -20,6 +25,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import model.Course;
+import model.CourseFileParser;
 
 
 
@@ -41,8 +48,10 @@ public class mainFX extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		
 		stage = primaryStage;
 		stage.setTitle("App Name");
+		CourseFileParser parser = new CourseFileParser("classes.txt");
 		
 		listButton = new Button("List View");
 		listButton.setOnAction(e -> switchScene(2));
@@ -55,7 +64,7 @@ public class mainFX extends Application {
 		comboBox.setPromptText("Select Classification");
 		
 		listView = new ListView<>();
-		listView.getItems().addAll("cs1", "cs2", "cs3");
+		addAllCourses(parser.parse());
 		listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 		
 		listProceedButton = new Button("Proceed");
@@ -93,5 +102,12 @@ public class mainFX extends Application {
 			stage.setScene(scene3);
 		}
 	} 
+	
+	private void addAllCourses(List<Course> courseList) {
+		Set<String> courses = new TreeSet<String>();
+		for(Course course : courseList)
+			courses.add(course.toString());
+		listView.getItems().addAll(courses);
+	}
 
 }

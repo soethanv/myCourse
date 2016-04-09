@@ -178,4 +178,8 @@ public class Course {
 	public void setPrerequisites(List<Course> prerequisites) {
 		this.prerequisites = prerequisites;
 	}
+	
+	public String toString() {
+		return String.format("%s %s: %s", getDicipline(), getNumber(), getDescription());
+	}
 }
