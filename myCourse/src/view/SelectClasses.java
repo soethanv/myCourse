@@ -340,6 +340,8 @@ public class SelectClasses extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         jLabel1.setForeground(Color.yellow);
+        if(jLabel1.isForegroundSet())
+            jLabel1.setForeground(Color.black);
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
