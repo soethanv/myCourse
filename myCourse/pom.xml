@@ -6,12 +6,6 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
-      <resource>
-        <directory>src</directory>
-        <excludes>
-          <exclude>**/*.java</exclude>
-        </excludes>
-      </resource>
     </resources>
     <plugins>
       <plugin>
@@ -25,21 +19,10 @@
     </plugins>
   </build>
   <dependencies>
-  <dependency>
-	  <groupId>javafx</groupId>
-	  <artifactId>jfxrt</artifactId>
-	  <version>${java.version}</version>
-	  <scope>system</scope>
-	  <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
-	</dependency>
   	<dependency>
   		<groupId>com.twilio.sdk</groupId>
   		<artifactId>twilio-java-sdk</artifactId>
   		<version>3.4.5</version>
   	</dependency>
   </dependencies>
-  <properties>
-  	<java.version>1.8</java.version>
-  	<java.home>C:\Program Files\Java\jre1.8.0_51</java.home>
-  </properties>
 </project>
