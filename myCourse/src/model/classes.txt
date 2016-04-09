@@ -1,0 +1,101 @@
+CS|1023|001|17222|Cultural Implications-Info Soc|3|T|10:00-11:15am
+CS|1063|001|10608|Intro to Comp Programming I|3|MWF|10:00-10:50am
+CS|1063|002|10449|Intro to Comp Programming I|3|MWF|11:00-11:50am
+CS|1063|003|19996|Intro to Comp Programming I|3|MWF|9:00-9:50am
+CS|1063|004|17267|Intro to Comp Programming I|3|TR|8:30-9:45am
+CS|1063|005|15283|Intro to Comp Programming I|3|MWF|2:00-2:50pm
+CS|1153|001|16195|Game Programming|3|MWF|1:00-1:50pm
+CS|1173|001|17226|Data Analysis and Visual|3|T|10:00-11:15am
+CS|1173|002|17227|Data Analysis and Visual|3|R|10:00-11:15am
+CS|1173|003|13310|Data Analysis and Visual|3|TR|11:30-12:45pm
+CS|1173|004|13357|Data Analysis and Visual|3|TR|4:00-5:15pm
+CS|1173|005|15284|Data Analysis and Visual|3|MWF|11:00-11:50am
+CS|1173|006|20003|Data Analysis and Visual|3|MWF|3:00-3:50pm
+CS|1711|001|12173|Intro Comp Prog II Recitation|1|T|4:00-4:50pm
+CS|1711|002|10431|Intro Comp Prog II Recitation|1|R|4:00-4:50pm
+CS|1711|003|17271|Intro Comp Prog II Recitation|1|M|11:00-11:50am
+CS|1711|004|17273|Intro Comp Prog II Recitation|1|W|11:00-11:50am
+CS|1711|005|16285|Intro Comp Prog II Recitation|1|M|4:00-4:50pm
+CS|1711|006|16286|Intro Comp Prog II Recitation|1|W|4:00-4:50pm
+CS|1713|001|10344|Intro to Computer Program II|3|TR|2:30-3:45pm
+CS|1713|002|17274|Intro to Computer Program II|3|MWF|10:00-10:50am
+CS|1713|003|16152|Intro to Computer Program II|3|MWF|3:00-3:50pm
+CS|2073|001|12913|Comp Prog W/Egr Application|3|TR|2:30-3:45pm
+CS|2073|002|10141|Comp Prog W/Egr Application|3|TR|6:00-7:15pm
+CS|2121|001|12848|Data Structures Recitation|1|T|10:00-10:50am
+CS|2121|002|12849|Data Structures Recitation|1|R|10:00-10:50am
+CS|2121|003|14411|Data Structures Recitation|1|T|11:30-12:20pm
+CS|2121|004|14412|Data Structures Recitation|1|R|11:30-12:20pm
+CS|2121|005|20010|Data Structures Recitation|1|T|2:30-3:20pm
+CS|2121|006|20012|Data Structures Recitation|1|R|2:30-3:20pm
+CS|2123|001|12844|Data Structures|3|TR|8:30-9:45am
+CS|2123|002|12846|Data Structures|3|TR|10:00-11:15am
+CS|2123|003|20016|Data Structures|3|TR|8:30-9:45am
+CS|2233|001|12855|Discrete Math Structures|3|TR|1:00-2:15pm
+CS|2233|002|15681|Discrete Math Structures|3|TR|4:00-5:15pm
+CS|3333|001|12859|Math Found of CS|3|MWF|1:00-1:50pm
+CS|3333|002|19040|Math Found of CS|3|MWF|2:00-2:50pm
+CS|3333|003|20020|Math Found of CS|3|MWF|3:00-3:50pm
+CS|3341|001|10626|Analysis of Algorithms Recitat|1|M|6:00-6:50pm
+CS|3341|002|14202|Analysis of Algorithms Recitat|1|W|6:00-6:50pm
+CS|3341|003|19446|Analysis of Algorithms Recitat|1|T|4:00-4:50pm
+CS|3341|004|20021|Analysis of Algorithms Recitat|1|R|4:00-4:50pm
+CS|3343|001|10287|Analysis Of Algorithms|3|MW|4:00-5:15pm
+CS|3343|002|19445|Analysis Of Algorithms|3|TR|2:30-3:45pm
+CS|3421|001|12865|Systems Programming Recitation|1|M|12:00-12:50pm
+CS|3421|002|14186|Systems Programming Recitation|1|W|12:00-12:50pm
+CS|3421|003|15732|Systems Programming Recitation|1|M|3:00-3:50pm
+CS|3421|004|16287|Systems Programming Recitation|1|W|3:00-3:50pm
+CS|3421|005|20022|Systems Programming Recitation|1|M|1:00-1:50pm
+CS|3421|006|20023|Systems Programming Recitation|1|W|1:00-1:50pm
+CS|3423|001|12864|Systems Programming|3|MWF|11:00-11:50am
+CS|3423|002|15731|Systems Programming|3|MWF|2:00-2:50pm
+CS|3423|003|20024|Systems Programming|3|MWF|11:00-11:50am
+CS|3433|001|13010|Computer and Info. Security|3|MWF|12:00-12:50pm
+CS|3443|001|16154|Application Programming|3|TR|1:00-2:15pm
+CS|3443|002|16164|Application Programming|3|MWF|12:00-12:50pm
+CS|3723|001|20026|Programming Languages|3|TR|11:30-12:45pm
+CS|3723|002|19437|Programming Languages|3|TR|6:00-7:15pm
+CS|3731|001|10628|Operating Systems Recitation|1|M|10:00-10:50am
+CS|3731|002|16289|Operating Systems Recitation|1|W|10:00-10:50am
+CS|3733|001|10121|Operating Systems|3|MW|8:30-9:45am
+CS|3743|001|17289|Intro to Database Systems|3|TR|2:30-3:45pm
+CS|3773|001|16165|Software Engineering|3|TBA|TBA
+CS|3773|002|20028|Software Engineering|3|TR|1:00-2:15pm
+CS|3793|001|19044|Intro Artificial Intelligence|3|TR|6:00-7:15pm
+CS|3841|001|12869|Comp Org Recitation|1|T|10:00-10:50am
+CS|3841|002|14450|Comp Org Recitation|1|R|10:00-10:50am
+CS|3841|003|18125|Comp Org Recitation|1|T|1:00-1:50pm
+CS|3841|004|19045|Comp Org Recitation|1|R|1:00-1:50pm
+CS|3843|001|12866|Computer Organization|3|TR|8:30-9:45am
+CS|3843|002|18123|Computer Organization|3|TR|11:30-12:45pm
+CS|3851|001|12872|Comp Architecture Recitation|1|M|1:00-1:50pm
+CS|3851|002|20030|Comp Architecture Recitation|1|W|1:00-1:50pm
+CS|3851|003|20031|Comp Architecture Recitation|1|M|2:00-2:50pm
+CS|3851|004|20032|Comp Architecture Recitation|1|W|2:00-2:50pm
+CS|3853|001|12870|Computer Architecture|3|MWF|12:00-12:50pm
+CS|3853|002|20033|Computer Architecture|3|MWF|1:00-1:50pm
+CS|4393|001|14028|User Interfaces|3|TBA|TBA
+CS|4593|001|19415|AT: Data Mining|3|TBA|TBA
+CS|4593|010|20035|AT: Sys. Dev.|3|MW|6:00-7:15pm
+CS|4723|001|20675|Software Val and Qual Assur|3|MWF|2:00-2:50pm
+CS|4733|001|20036|Project Management|3|MWF|1:00-1:50pm
+CS|4823|001|20038|Intro to Parallel Programming|3|MW|4:00-5:15pm
+CS|5103|001|16376|Software Engineering|3|TBA|TBA
+CS|5123|001|20674|Software Testing and Quality|3|MW|7:30-8:45pm
+CS|5153|001|14103|User Interfaces and Usability|3|TBA|TBA
+CS|5233|001|19055|Artificial Intelligence|3|TR|6:00-7:15pm
+CS|5323|001|13011|Principles of Info Security|3|TR|7:30-8:45pm
+CS|5343|001|20041|Secure Systems & Software|3|MW|4:00-5:15pm
+CS|5443|001|19056|Database Management Systems|3|TR|2:30-3:45pm
+CS|5473|001|20042|Data Mining|3|TBA|TBA
+CS|5513|001|13564|Computer Architecture|3|MW|6:00-7:15pm
+CS|5523|001|17304|Operating Systems|3|TR|7:30-8:45pm
+CS|5633|001|17305|Analysis of Algorithms|3|TR|6:00-7:15pm
+CS|5933|001|20632|Internship in Computer Science|3|TBA|TBA
+CS|5933|002|20633|Internship in Computer Science|3|TBA|TBA
+CS|5933|003|20634|Internship in Computer Science|3|TBA|TBA
+CS|5933|004|20635|Internship in Computer Science|3|TBA|TBA
+CS|5933|005|20636|Internship in Computer Science|3|TBA|TBA
+CS|6463|005|20043|AT:  Operating Systems|3|MW|7:30-8:45pm
+CS|6643|001|20044|Parallel Processing|3|MW|6:00-7:15pm
