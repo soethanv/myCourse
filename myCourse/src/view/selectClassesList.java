@@ -5,13 +5,6 @@
  */
 package view;
 
-import javax.swing.ListSelectionModel;
-import javax.swing.JScrollPane;
-import javax.swing.JList;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.ListSelectionModel;
-
 /**
  *
  * @author felip
@@ -19,23 +12,11 @@ import javax.swing.ListSelectionModel;
 public class selectClassesList extends javax.swing.JFrame {
 
     /**
-     * Creates new form selectClassesList
+     * Creates new form selectClassesList1
      */
     public selectClassesList() {
         initComponents();
-        selectClassesList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-        add(new JScrollPane(selectClassesList));
-        selectClassesList.addListSelectionListener(
-        new ListSelectionListener(){
-            
-            public void valueChanged(ListSelectionEvent event){
-                getContentPane().setBackground(
-                colors[selectClassesList.getSelectedIndex()]);
-                
-            }
-        }
-        )
-    
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,13 +27,17 @@ public class selectClassesList extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         courseList = new javax.swing.JList<>();
         sCourseName = new javax.swing.JLabel();
         iCourseNumber = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        courseList1 = new javax.swing.JList<>();
+        title1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         courseList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "3443          Application Programming     ", "3723          Programming Languages                   ", "3843          Computer Organization         ", "3841          Comp Org Recitation        ", "3841          Comp Org Recitation               ", "3853          Computer Architecture          ", "3851          Computer Architecture R     ", "3851          Computer Architecture R           ", "3873          Computer Networks           ", "2233          Discrete Match Structures      " };
@@ -64,6 +49,11 @@ public class selectClassesList extends javax.swing.JFrame {
                 courseListMouseClicked(evt);
             }
         });
+        courseList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                courseListValueChanged(evt);
+            }
+        });
         jScrollPane1.setViewportView(courseList);
 
         sCourseName.setText("Course Name");
@@ -72,37 +62,81 @@ public class selectClassesList extends javax.swing.JFrame {
 
         title.setText("Select Your Courses");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jFrame1Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
+                            .addGroup(jFrame1Layout.createSequentialGroup()
                                 .addComponent(iCourseNumber)
                                 .addGap(60, 60, 60)
                                 .addComponent(sCourseName))))
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(jFrame1Layout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addComponent(title)))
                 .addContainerGap(870, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addComponent(title)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(iCourseNumber)
                     .addComponent(sCourseName))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(160, Short.MAX_VALUE))
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        courseList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "3443          Application Programming     ", "3723          Programming Languages                   ", "3843          Computer Organization         ", "3841          Comp Org Recitation        ", "3841          Comp Org Recitation               ", "3853          Computer Architecture          ", "3851          Computer Architecture R     ", "3851          Computer Architecture R           ", "3873          Computer Networks           ", "2233          Discrete Match Structures      " };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        courseList1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                courseList1MouseClicked(evt);
+            }
+        });
+        courseList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                courseList1ValueChanged(evt);
+            }
+        });
+        jScrollPane2.setViewportView(courseList1);
+
+        title1.setText("Select Your Courses");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(107, 107, 107)
+                .addComponent(title1)
+                .addContainerGap(143, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(77, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(198, 198, 198)
+                        .addComponent(title1)))
+                .addGap(75, 75, 75))
         );
 
         pack();
@@ -112,11 +146,21 @@ public class selectClassesList extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_courseListMouseClicked
 
+    private void courseListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_courseListValueChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_courseListValueChanged
+
+    private void courseList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_courseList1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_courseList1MouseClicked
+
+    private void courseList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_courseList1ValueChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_courseList1ValueChanged
+
     /**
      * @param args the command line arguments
      */
-    
- 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -140,6 +184,7 @@ public class selectClassesList extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(selectClassesList.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -147,14 +192,17 @@ public class selectClassesList extends javax.swing.JFrame {
                 new selectClassesList().setVisible(true);
             }
         });
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> courseList;
+    private javax.swing.JList<String> courseList1;
     private javax.swing.JLabel iCourseNumber;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel sCourseName;
     private javax.swing.JLabel title;
+    private javax.swing.JLabel title1;
     // End of variables declaration//GEN-END:variables
 }
