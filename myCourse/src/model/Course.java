@@ -6,6 +6,10 @@ public class Course {
 	public static final String COURSE_CS = "CS";
 	public static final String COURSE_BIO = "BIO";
 	public static final String COURSE_MAT = "MAT";
+	public static final String COURSE_ACC = "ACC";
+	public static final String COURSE_ANT = "ANT";
+	public static final String COURSE_ARC = "ARC";
+	public static final String COURSE_ART = "ART";
 	
 	private String dicipline;
 	private String number;
@@ -19,6 +23,13 @@ public class Course {
 	
 	public Course() {
 		
+	}
+	
+	public static boolean isDicipline(String str) {
+		return str.equals(COURSE_ACC) || str.equals(COURSE_ANT) || 
+				str.equals(COURSE_ARC) || str.equals(COURSE_ART) || 
+				str.equals(COURSE_BIO) || str.equals(COURSE_CS) || 
+				str.equals(COURSE_MAT);
 	}
 
 	/**
