@@ -36,7 +36,7 @@ public class diagramOrList extends javax.swing.JFrame {
         diagramOfCourses = new javax.swing.JButton();
         listOfCourses = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnStudentClass = new javax.swing.JComboBox<>();
+        btnStudentClass = new javax.swing.JComboBox<String>();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -77,7 +77,7 @@ public class diagramOrList extends javax.swing.JFrame {
         jLabel1.setText("Choose Student Classification");
 
         btnStudentClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnStudentClass.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Freshman", "Sophomore", "Junior", "Senior" }));
+        btnStudentClass.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Choose", "Freshman", "Sophomore", "Junior", "Senior" }));
         btnStudentClass.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 btnStudentClassItemStateChanged(evt);
@@ -234,8 +234,8 @@ public void ChangeEnable(boolean b)
 
     private void listOfCoursesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listOfCoursesMouseClicked
             this.setVisible(false);
-            selectClassesList SCL = new selectClassesList();  // TODO add your handling code here:
-           SCL.setVisible(true); 
+           // selectClassesList SCL = new selectClassesList();  // TODO add your handling code here:
+          // SCL.setVisible(true); 
           
     }//GEN-LAST:event_listOfCoursesMouseClicked
 
