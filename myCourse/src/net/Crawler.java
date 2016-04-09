@@ -37,6 +37,7 @@ public class Crawler {
 				if(line.matches("^\\W*CS.*")) {
 					lastCourse = line.substring(0, line.indexOf('.'));
 					if(lastCourse.length() > 10) continue;
+					lastCourse = lastCourse.replaceAll("\\W", "");
 					output.put(lastCourse, null);
 				} else if(line.matches("^Prerequisite.*")){
 					line = line.substring(0, line.indexOf("."));
